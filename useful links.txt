@@ -1,0 +1,14 @@
+﻿Переходы между блоками - http://www.liborzezulka.com/en
+Дизайн тегами - http://2web-master.ru/wp-content/uploads/2011/05/16_sensitive_designs_BC.jpg
+Дизайн - http://melaniedaveid.com
+Цвета - http://seanhalpin.io
+
+https://www.w3schools.com :
+Кнопка наверх - https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+Меню после скролла - https://www.w3schools.com/howto/howto_js_navbar_slide.asp
+Перекрытие - https://www.w3schools.com/howto/howto_css_overlay.asp
+Мульти-форма - https://www.w3schools.com/howto/howto_js_form_steps.asp
+Рисование при скролле - https://www.w3schools.com/howto/howto_js_scrolldrawing.asp
+Скилл-бар - https://www.w3schools.com/howto/howto_css_skill_bar.asp
+Прокрутка внутри - https://www.w3schools.com/howto/howto_css_image_sticky.asp
+Typing Effect - https://www.w3schools.com/howto/howto_js_typewriter.asp
