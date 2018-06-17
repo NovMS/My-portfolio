@@ -1,0 +1,26 @@
+@import "../variables.less";
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: @color-main-back url("../img/back1.png") 0 100% fixed;
+  animation: back1 50s linear infinite;
+  width: 100%;
+  height: 100vh;
+}
+@keyframes back1 {
+  from {
+    background-position: 0px -1000px;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+.main-header__logo {
+  display: block;
+  width: 70%;
+}
