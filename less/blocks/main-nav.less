@@ -1,6 +1,8 @@
 @import "../variables.less";
 
 .main-nav {
+  display: flex;
+  flex-wrap: wrap;
   margin: 30px 0 0 0;
   padding: 0;
   list-style: none;
@@ -8,7 +10,6 @@
   font-weight: bold;
   text-transform: uppercase;
   li {
-    float: left;
     margin-right: 15px;
     a {
       color: @color-dark-font;
@@ -16,6 +17,18 @@
       &:hover {
         color: @color-main-font;
       }
+    }
+  }
+  li:last-child {
+    margin-right: 0;
+  }
+}
+
+.main-nav_about {
+  justify-content: center;
+  li{
+    a:hover {
+      color: white;
     }
   }
 }
