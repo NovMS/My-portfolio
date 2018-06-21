@@ -42,7 +42,7 @@ module.exports = function(grunt) {
 			},
 			scripts: {
 				files: ['js/*.js'],
-				tasks: ['concat', 'uglify', 'removelogging']
+				tasks: ['concat']
 			}
 		},
 		
@@ -165,9 +165,7 @@ module.exports = function(grunt) {
 		"csso",
 		"symbols",
 		"imagemin",
-		"concat",
-		"uglify",
-		"removelogging"
+		"concat"
 	]);
 	
 };

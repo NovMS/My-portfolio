@@ -14,21 +14,120 @@
         <li><a href="">&lt;ABOUT&gt;</a></li>
         <li><a href="">&lt;CONTACT&gt;</a></li>
     </ul>
+    <svg class="main-header__down-arrow" width=60px height=60px>
+        <use xlink:href="img/symbols.svg#down-arrow"></use>
+    </svg>
 </header>
 <section class="main-about">
+    <!--main-about__left_fixed-->
     <section class="main-about__left">
         <img class="main-about__title" src="../img/about.png" alt="&lt;ABOUT&gt;">
         <ul class="main-nav main-nav_about">
             <li><a href="">&lt;ABOUT&gt;</a></li>
             <li><a href="">&lt;CONTACT&gt;</a></li>
         </ul>
+        <!--main-about__avatar_fixed-->
+        <div class="main-about__avatar">
+            <img src="../img/ava.png" alt="Maksim">
+        </div>
     </section>
-    <div class="main-about__avatar">
-        <img src="../img/ava.png" alt="Maksim">
-    </div>
+    <!--main-about__right_fixed-->
     <section class="main-about__right">
+        <div class="main-about__right-text">
+            <h3 class="main-about__h3">Здравствуйте!</h3>
+            <p class="main-about__about-me">Меня зовут Максим. Я - начинающий Front-end разработчик. За последние
+                полтора года овладел на достаточно высоком уровне <i>HTML5</i>, <i>CSS3</i>, <i>JavaScript</i>,
+                <i>jQuery</i>. Весь код пишу по <i>БЭМ</i>у, пользуюсь препроцессором <i>LESS</i> и автоматизирую
+                front-end <i>Grunt</i>-ом. Верстаю <i>адаптивно</i>, <i>резиново</i> и <i>кроссбраузерно</i>.
+                Имею представление о серверной части (был проект на <i>Node.js</i>).<br>Всегда самосовершенствуюсь и
+                практикуюсь в области front-end разработки.</p>
+        </div>
 
+        <div class="main-about__right-text">
+            <h3 class="main-about__h3">Личные качества:</h3>
+            <ul class="main-about__qualities">
+                <li>Целеустремленность</li>
+                <li>Коммуникабельность</li>
+                <li>Ответственность</li>
+                <li>Настойчивость</li>
+            </ul>
+        </div>
+
+        <div class="main-about__right-text">
+            <h3 class="main-about__h3">Образование:</h3>
+            <p class="main-about__education">В данный момент учусь в Москве на 3 курсе Российского Университета
+                Дружбы Народов на факультете физико-математических и естественных наук по направлению
+                «Прикладная информатика»</p>
+        </div>
+
+        <div class="main-about__right-text">
+            <h3 class="main-about__h3">Профессиональные навыки:</h3>
+
+            <div class="skills">
+                <p>HTML:</p>
+                <div class="skills__container">
+                    <div class="skills__skill skills__skill_html"></div>
+                </div>
+
+                <p>CSS:</p>
+                <div class="skills__container">
+                    <div class="skills__skill skills__skill_css"></div>
+                </div>
+
+                <p>JavaScript:</p>
+                <div class="skills__container">
+                    <div class="skills__skill skills__skill_js"></div>
+                </div>
+
+                <p>jQuery:</p>
+                <div class="skills__container">
+                    <div class="skills__skill skills__skill_jquery"></div>
+                </div>
+
+                <p>Node.js:</p>
+                <div class="skills__container">
+                    <div class="skills__skill skills__skill_nodejs"></div>
+                </div>
+
+                <p>LESS:</p>
+                <div class="skills__container">
+                    <div class="skills__skill skills__skill_less"></div>
+                </div>
+
+                <p>Grunt:</p>
+                <div class="skills__container">
+                    <div class="skills__skill skills__skill_grunt"></div>
+                </div>
+
+                <p>Git:</p>
+                <div class="skills__container">
+                    <div class="skills__skill skills__skill_git"></div>
+                </div>
+
+                <p>Photoshop:</p>
+                <div class="skills__container">
+                    <div class="skills__skill skills__skill_photoshop"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-about__right-text">
+            <h3 class="main-about__h3">Ссылки:</h3>
+            <div class="links">
+                <a href=""><svg width=50px height=50px><use xlink:href="img/symbols.svg#email"></use></svg></a>
+                <a href=""><svg width=50px height=50px><use xlink:href="img/symbols.svg#github"></use></svg></a>
+                <a href=""><svg width=50px height=50px><use xlink:href="img/symbols.svg#vk"></use></svg></a>
+                <a href=""><svg width=50px height=50px><use xlink:href="img/symbols.svg#telegram"></use></svg></a>
+                <a href=""><svg width=50px height=50px><use xlink:href="img/symbols.svg#whatsapp"></use></svg></a>
+                <a href=""><svg width=50px height=50px><use xlink:href="img/symbols.svg#instagram"></use></svg></a>
+            </div>
+        </div>
     </section>
 </section>
+
+<section class="contact">
+
+</section>
 </body>
+<script src="js/build.js"></script>
 </html>
