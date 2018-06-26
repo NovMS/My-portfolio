@@ -85,7 +85,8 @@ module.exports = function(grunt) {
 			options: {
 				svg: {
 					style: "display: none",
-					xmlns: "http://www.w3.org/2000/svg"
+					xmlns: "http://www.w3.org/2000/svg",
+					'xmlns:xlink': "http://www.w3.org/1999/xlink"
 				}
 			},
 			symbols: {
@@ -112,7 +113,8 @@ module.exports = function(grunt) {
 						"fonts/**/*.{woff,woff2}",
 						"img/**",
 						"*.html",
-						"css/normalize.min.css"
+						"css/*.css",
+						"js/libs/*.js"
 					],
 					dest: "build"
 				}]

@@ -9,7 +9,7 @@
 </head>
 <body>
 <header class="main-header">
-    <img class="main-header__logo" src="img/logo.png" alt="Novoseltsev Maksim<br>Front-End Developer">
+    <img class="main-header__logo" src="img/logo.svg">
     <ul class="main-nav">
         <li><a href="">&lt;ABOUT&gt;</a></li>
         <li><a href="">&lt;CONTACT&gt;</a></li>
@@ -18,24 +18,24 @@
         <use xlink:href="img/symbols.svg#down-arrow"></use>
     </svg>
 </header>
-<section class="main-about">
-    <!--main-about__left_fixed-->
-    <section class="main-about__left">
-        <img class="main-about__title" src="../img/about.png" alt="&lt;ABOUT&gt;">
+<section class="main-blocks">
+    <!--main-blocks__left_fixed-->
+    <section class="main-blocks__left">
+        <img class="main-blocks__title" src="../img/about.png" alt="&lt;ABOUT&gt;">
         <ul class="main-nav main-nav_about">
             <li><a href="">&lt;ABOUT&gt;</a></li>
             <li><a href="">&lt;CONTACT&gt;</a></li>
         </ul>
-        <!--main-about__avatar_fixed-->
-        <div class="main-about__avatar">
+        <!--main-blocks__avatar_fixed-->
+        <div class="main-blocks__avatar">
             <img src="../img/ava.png" alt="Maksim">
         </div>
     </section>
-    <!--main-about__right_fixed-->
-    <section class="main-about__right">
-        <div class="main-about__right-text">
-            <h3 class="main-about__h3">Здравствуйте!</h3>
-            <p class="main-about__about-me">Меня зовут Максим. Я - начинающий Front-end разработчик. За последние
+    <!--main-blocks__right_fixed-->
+    <section class="main-blocks__right">
+        <div class="main-blocks__right-text">
+            <h3 class="main-blocks__h3">Здравствуйте!</h3>
+            <p class="main-blocks__about-me">Меня зовут Максим. Я - начинающий Front-end разработчик. За последние
                 полтора года овладел на достаточно высоком уровне <i>HTML5</i>, <i>CSS3</i>, <i>JavaScript</i>,
                 <i>jQuery</i>. Весь код пишу по <i>БЭМ</i>у, пользуюсь препроцессором <i>LESS</i> и автоматизирую
                 front-end <i>Grunt</i>-ом. Верстаю <i>адаптивно</i>, <i>резиново</i> и <i>кроссбраузерно</i>.
@@ -43,9 +43,9 @@
                 практикуюсь в области front-end разработки.</p>
         </div>
 
-        <div class="main-about__right-text">
-            <h3 class="main-about__h3">Личные качества:</h3>
-            <ul class="main-about__qualities">
+        <div class="main-blocks__right-text">
+            <h3 class="main-blocks__h3">Личные качества:</h3>
+            <ul class="main-blocks__qualities">
                 <li>Целеустремленность</li>
                 <li>Коммуникабельность</li>
                 <li>Ответственность</li>
@@ -53,15 +53,15 @@
             </ul>
         </div>
 
-        <div class="main-about__right-text">
-            <h3 class="main-about__h3">Образование:</h3>
-            <p class="main-about__education">В данный момент учусь в Москве на 3 курсе Российского Университета
+        <div class="main-blocks__right-text">
+            <h3 class="main-blocks__h3">Образование:</h3>
+            <p class="main-blocks__education">В данный момент учусь в Москве на 3 курсе Российского Университета
                 Дружбы Народов на факультете физико-математических и естественных наук по направлению
                 «Прикладная информатика»</p>
         </div>
 
-        <div class="main-about__right-text">
-            <h3 class="main-about__h3">Профессиональные навыки:</h3>
+        <div class="main-blocks__right-text">
+            <h3 class="main-blocks__h3">Профессиональные навыки:</h3>
 
             <div class="skills">
                 <p>HTML:</p>
@@ -111,8 +111,8 @@
             </div>
         </div>
 
-        <div class="main-about__right-text">
-            <h3 class="main-about__h3">Ссылки:</h3>
+        <div class="main-blocks__right-text">
+            <h3 class="main-blocks__h3">Ссылки:</h3>
             <div class="links">
                 <a href=""><svg width=50px height=50px><use xlink:href="img/symbols.svg#email"></use></svg></a>
                 <a href=""><svg width=50px height=50px><use xlink:href="img/symbols.svg#github"></use></svg></a>
@@ -125,8 +125,18 @@
     </section>
 </section>
 
-<section class="contact">
-
+<section class="main-blocks">
+    <!--main-blocks__left_fixed-->
+    <section class="main-blocks__left main-blocks__left_works">
+        <img class="main-blocks__title" src="../img/about.png" alt="&lt;ABOUT&gt;">
+        <ul class="main-nav main-nav_about">
+            <li><a href="">&lt;ABOUT&gt;</a></li>
+            <li><a href="">&lt;CONTACT&gt;</a></li>
+        </ul>
+    </section>
+    <!--main-blocks__right_fixed-->
+    <section class="main-blocks__right">
+    </section>
 </section>
 </body>
 <script src="js/build.js"></script>
