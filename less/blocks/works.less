@@ -1,0 +1,58 @@
+@import "../variables.less";
+.works {
+  position: relative;
+  overflow: hidden;
+}
+
+.works__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: white;
+  height: 100vh;
+  transform: translateX(-50%);
+}
+
+.works__title {
+    width: 40%;
+}
+
+.works__right {
+  position: relative;
+  margin-top: -100vh;
+  left: 50%;
+  background-color: @color-main-back;
+  height: 100vh;
+  perspective: 1000px;
+}
+
+.works__all-projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 60%;
+  padding: 10px;
+  margin: 0 auto;
+  height: 100vh;
+  transition: 1s;
+  transform: rotateX(55deg) rotateZ(0deg) rotateY(0deg);
+  transform-style: preserve-3d;
+}
+
+.works__project {
+  width: 32.66%;
+  height: 45%;
+  overflow: hidden;
+  margin-right: 1%;
+  transition: 0.3s;
+  background: url("../img/BlackBox.png") top;
+  background-size: cover;
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
