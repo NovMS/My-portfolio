@@ -6,8 +6,21 @@ var shadow = document.querySelectorAll('.works__shadow');
 
 var bb = document.querySelector('.works__bb');
 var descBB = document.querySelector('.works__description-bb');
+
 var cat = document.querySelector('.works__cat');
 var descCat = document.querySelector('.works__description-cat');
+
+var academy = document.querySelector('.works__academy');
+var descAcademy = document.querySelector('.works__description-academy');
+
+var sport = document.querySelector('.works__sport');
+var descSport = document.querySelector('.works__description-sport');
+
+var websocket = document.querySelector('.works__websocket');
+var descWebsocket = document.querySelector('.works__description-websocket');
+
+var search = document.querySelector('.works__search');
+var descSearch = document.querySelector('.works__description-search');
 
 bb.addEventListener('click', function () {
     openDescription(bb, descBB);
@@ -17,10 +30,30 @@ cat.addEventListener('click', function () {
     openDescription(cat, descCat);
 });
 
+academy.addEventListener('click', function () {
+    openDescription(academy, descAcademy);
+});
+
+sport.addEventListener('click', function () {
+    openDescription(sport, descSport);
+});
+
+websocket.addEventListener('click', function () {
+    openDescription(websocket, descWebsocket);
+});
+
+search.addEventListener('click', function () {
+    openDescription(search, descSearch);
+});
+
 for (var i = 0; i < shadow.length; i++) {
     shadow[i].addEventListener('click', function() {
         closeDescription (bb, descBB);
         closeDescription (cat, descCat);
+        closeDescription (academy, descAcademy);
+        closeDescription (sport, descSport);
+        closeDescription (websocket, descWebsocket);
+        closeDescription (search, descSearch);
     });
 }
 
