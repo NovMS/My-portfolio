@@ -117,12 +117,12 @@
         <div class="about__right-text">
             <h3 class="about__h3">Ссылки:</h3>
             <div class="links">
-                <a href=""><svg width=50px height=50px><use xlink:href="img/symbols.svg#email"></use></svg></a>
-                <a href=""><svg width=50px height=50px><use xlink:href="img/symbols.svg#github"></use></svg></a>
-                <a href=""><svg width=50px height=50px><use xlink:href="img/symbols.svg#vk"></use></svg></a>
-                <a href=""><svg width=50px height=50px><use xlink:href="img/symbols.svg#telegram"></use></svg></a>
-                <a href=""><svg width=50px height=50px><use xlink:href="img/symbols.svg#whatsapp"></use></svg></a>
-                <a href=""><svg width=50px height=50px><use xlink:href="img/symbols.svg#instagram"></use></svg></a>
+                <a href=""><svg width=45px height=45px><use xlink:href="img/symbols.svg#email"></use></svg></a>
+                <a href=""><svg width=45px height=45px><use xlink:href="img/symbols.svg#github"></use></svg></a>
+                <a href=""><svg width=45px height=45px><use xlink:href="img/symbols.svg#vk"></use></svg></a>
+                <a href=""><svg width=45px height=45px><use xlink:href="img/symbols.svg#telegram"></use></svg></a>
+                <a href=""><svg width=45px height=45px><use xlink:href="img/symbols.svg#whatsapp"></use></svg></a>
+                <a href=""><svg width=45px height=45px><use xlink:href="img/symbols.svg#instagram"></use></svg></a>
             </div>
         </div>
     </section>
@@ -250,7 +250,9 @@
                 <div class="works__description-content">
                     <h2>WebSocket-приложение</h2>
                     <div class="works__img-description">
+                        <p>Первое устройство:</p>
                         <img src="img/game.png" alt="">
+                        <p>Второе устройство:</p>
                         <img src="img/lel.png" alt="">
                         <img src="img/gamepad.png" alt="">
                     </div>
@@ -291,9 +293,47 @@
         </div>
     </div>
 </section>
-<section class="contact" style="height: 100vh">
 
+<section class="contact">
+    <div class="contact__title">
+        <img src="../img/contact.svg" alt="&lt;Contact&gt;">
+    </div>
+    <form class="contact__form" action="contact-form.php" method="post">
+        <p>
+            <label class="contact__label" for="name">Введите имя:</label><br>
+            <input class="contact__input" type="text"  name="name" id="name" required />
+        </p>
+        <p>
+            <label class="contact__label" for="email">Введите E-mail:</label><br>
+            <input class="contact__input" type="email" name="email" id="email" required/>
+        </p>
+        <p>
+            <label class="contact__label" for="tel">Введите номер телефона:</label><br>
+            <input class="contact__input" type="tel" name="tel" id="tel"/>
+        </p>
+        <p>
+            <label class="contact__label" for="message">Введите сообщение:</label><br>
+            <textarea class="contact__input" name="message" id="message" cols="40" rows="6"></textarea>
+        </p>
+        <p>
+            <button class="contact__submit" type="submit">Отправить</button>
+        </p>
+    </form>
 </section>
+
+<footer class="footer">
+    <div class="links links_white">
+        <a href=""><svg width=40px height=40px><use xlink:href="img/symbols.svg#email"></use></svg></a>
+        <a href=""><svg width=40px height=40px><use xlink:href="img/symbols.svg#github"></use></svg></a>
+        <a href=""><svg width=40px height=40px><use xlink:href="img/symbols.svg#vk"></use></svg></a>
+        <a href=""><svg width=40px height=40px><use xlink:href="img/symbols.svg#telegram"></use></svg></a>
+        <a href=""><svg width=40px height=40px><use xlink:href="img/symbols.svg#whatsapp"></use></svg></a>
+        <a href=""><svg width=40px height=40px><use xlink:href="img/symbols.svg#instagram"></use></svg></a>
+    </div>
+    <div class="footer__about">
+        <p>Design and development by Novoseltsev Maksim, 2018</p>
+    </div>
+</footer>
 </body>
 <script src="js/build.js"></script>
 </html>
