@@ -1,15 +1,18 @@
 @import "../variables.less";
 
 .main-nav {
+
   display: flex;
   flex-wrap: wrap;
   margin: 30px 0 0 0;
+  text-align: center;
   padding: 0;
   list-style: none;
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
-  li {
+
+  >li {
     margin-right: 15px;
     a {
       color: @color-dark-font;
@@ -18,10 +21,52 @@
         color: @color-main-font;
       }
     }
+    &:nth-child(3) {
+      margin-right: 0;
+    }
   }
-  li:last-child {
-    margin-right: 0;
+
+  @media @tablet-width {
+    width: 150px;
+    box-sizing: border-box;
+    flex-direction: column;
+    text-align: left;
+    position: fixed;
+    left: -150px;
+    top: 0;
+    font-size: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 10px 0 0 0;
+    padding: 15px 10px;
+    z-index: 4000;
+    transition: 0.5s;
+    >li {
+      cursor: pointer;
+      width: 100%;
+      padding-bottom: 7.5px;
+      margin-bottom: 7.5px;
+      border-bottom: 1px solid white;
+      a {
+        display: block;
+        color: white;
+      }
+      &:nth-child(3) {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        border-bottom: none;
+      }
+    }
+    background-color: @color-dark-font;
   }
+
+}
+
+.main-nav_visible {
+  @media @tablet-width {
+    left: 0;
+  }
+  transition: 0.5s;
 }
 
 .main-nav_about {
@@ -30,5 +75,64 @@
     a:hover {
       color: white;
     }
+  }
+  @media @tablet-width {
+    display: none;
+  }
+}
+
+.main-nav__sandwich {
+  display: none;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  right: -35px;
+  top: 0;
+  cursor: pointer;
+  &::after {
+    content: "";
+    width: 25px;
+    height: 4px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    background-color: @color-dark-font;
+    box-shadow: 0 8px @color-dark-font;
+    transition: 0.5s;
+  }
+  &::before {
+    content: "";
+    width: 25px;
+    height: 4px;
+    position: absolute;
+    left: 5px;
+    top: 21px;
+    background-color: @color-dark-font;
+    transition: 0.5s;
+  }
+  @media @tablet-width {
+    display: block;
+  }
+}
+
+.main-nav__sandwich_visible{
+  &::after {
+    left: 5px;
+    top: 16px;
+    box-shadow: none;
+    transform: rotate(45deg);
+    transition: 0.5s;
+  }
+  &::before {
+    left: 5px;
+    top: 16px;
+    transform: rotate(-45deg);
+    transition: 0.5s;
+  }
+}
+
+main-nav_works {
+  @media @tablet-width {
+    display: none;
   }
 }

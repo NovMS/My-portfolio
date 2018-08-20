@@ -2,31 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Novoseltsev Maksim</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-<header class="main-header">
+<header class="main-header" id="zero-block" name="zero-block">
     <img class="main-header__logo" src="img/logo.svg">
     <ul class="main-nav">
-        <li><a href="">&lt;ABOUT&gt;</a></li>
-        <li><a href="">&lt;WORKS&gt;</a></li>
-        <li><a href="">&lt;CONTACT&gt;</a></li>
+        <li><a href="#first-block" class="scrollto">&lt;ABOUT&gt;</a></li>
+        <li><a href="#second-block" class="scrollto">&lt;WORKS&gt;</a></li>
+        <li><a href="#third-block" class="scrollto">&lt;CONTACT&gt;</a></li>
+        <div class="main-nav__sandwich"></div>
     </ul>
-    <svg class="main-header__down-arrow" width=60px height=60px>
-        <use xlink:href="img/symbols.svg#down-arrow"></use>
-    </svg>
+    <a href="#first-block" class="scrollto link-down-arrow">
+        <svg class="main-header__down-arrow" width=60px height=60px>
+            <use xlink:href="img/symbols.svg#down-arrow"></use>
+        </svg>
+    </a>
 </header>
-<section class="about">
+<section class="about" id="first-block" name="first-block">
     <!--about__left_fixed-->
     <section class="about__left">
         <img class="about__title" src="../img/about.svg" alt="&lt;ABOUT&gt;">
         <ul class="main-nav main-nav_about">
-            <li><a href="">&lt;ABOUT&gt;</a></li>
-            <li><a href="">&lt;WORKS&gt;</a></li>
-            <li><a href="">&lt;CONTACT&gt;</a></li>
+            <li><a href="#first-block" class="scrollto">&lt;ABOUT&gt;</a></li>
+            <li><a href="#second-block" class="scrollto">&lt;WORKS&gt;</a></li>
+            <li><a href="#third-block" class="scrollto">&lt;CONTACT&gt;</a></li>
         </ul>
         <!--about__avatar_fixed-->
         <div class="about__avatar">
@@ -38,7 +42,7 @@
         <div class="about__right-text">
             <h3 class="about__h3">Здравствуйте!</h3>
             <p class="about__about-me">Меня зовут Максим. Я - начинающий Front-end разработчик. Последние
-                полтора года посвятил изучению <i>HTML5</i>, <i>CSS3</i>, <i>JavaScript</i>,
+                полтора года посвятил изучению <i>HTML5</i>, <i>CSS3</i>. Сейчас учу <i>JavaScript</i> и
                 <i>jQuery</i>. Весь код пишу по <i>БЭМ</i>у, пользуюсь препроцессором <i>LESS</i> и автоматизирую
                 front-end <i>Grunt</i>-ом. Верстаю <i>адаптивно</i>, <i>резиново</i> и <i>кроссбраузерно</i>.
                 Имею представление о серверной части (был проект на <i>Node.js</i>). Также знаком с <i>C++</i>, <i>Java</i>, <i>Python</i>, <i>Prolog</i> и <i>GPSS</i>. <br>Всегда самосовершенствуюсь и
@@ -64,7 +68,7 @@
         </div>
 
         <div class="about__right-text">
-            <h3 class="about__h3">Профессиональные навыки:</h3>
+            <h3 class="about__h3">Навыки:</h3>
 
             <div class="skills">
                 <p>HTML:</p>
@@ -117,27 +121,27 @@
         <div class="about__right-text">
             <h3 class="about__h3">Ссылки:</h3>
             <div class="links">
-                <a href=""><svg width=45px height=45px><use xlink:href="img/symbols.svg#email"></use></svg></a>
-                <a href=""><svg width=45px height=45px><use xlink:href="img/symbols.svg#github"></use></svg></a>
-                <a href=""><svg width=45px height=45px><use xlink:href="img/symbols.svg#vk"></use></svg></a>
-                <a href=""><svg width=45px height=45px><use xlink:href="img/symbols.svg#telegram"></use></svg></a>
-                <a href=""><svg width=45px height=45px><use xlink:href="img/symbols.svg#whatsapp"></use></svg></a>
-                <a href=""><svg width=45px height=45px><use xlink:href="img/symbols.svg#instagram"></use></svg></a>
+                <a href="mailto:no.ms@ya.ru"><svg width=45px height=45px><use xlink:href="img/symbols.svg#email"></use></svg></a>
+                <a href="https://github.com/NovMS"><svg width=45px height=45px><use xlink:href="img/symbols.svg#github"></use></svg></a>
+                <a href="https://vk.com/maksim_novoseltsev"><svg width=45px height=45px><use xlink:href="img/symbols.svg#vk"></use></svg></a>
+                <a href="https://t.me/novms"><svg width=45px height=45px><use xlink:href="img/symbols.svg#telegram"></use></svg></a>
+                <a href="https://api.whatsapp.com/send?phone=79017477053"><svg width=45px height=45px><use xlink:href="img/symbols.svg#whatsapp"></use></svg></a>
+                <a href="https://www.instagram.com/_arlion_"><svg width=45px height=45px><use xlink:href="img/symbols.svg#instagram"></use></svg></a>
             </div>
         </div>
     </section>
 </section>
 
-<section class="works">
+<section class="works" id="second-block" name="second-block">
     <div class="works__content">
         <div class="works__left">
             <div class="works__title">
                 <img src="../img/works.svg" alt="&lt;Works&gt;">
             </div>
-            <ul class="main-nav">
-                <li><a href="">&lt;ABOUT&gt;</a></li>
-                <li><a href="">&lt;WORKS&gt;</a></li>
-                <li><a href="">&lt;CONTACT&gt;</a></li>
+            <ul class="main-nav main-nav_works">
+                <li><a href="#first-block" class="scrollto">&lt;ABOUT&gt;</a></li>
+                <li><a href="#second-block" class="scrollto">&lt;WORKS&gt;</a></li>
+                <li><a href="#third-block" class="scrollto">&lt;CONTACT&gt;</a></li>
             </ul>
         </div>
         <div class="works__right">
@@ -294,7 +298,7 @@
     </div>
 </section>
 
-<section class="contact">
+<section class="contact" id="third-block" name="third-block">
     <div class="contact__title">
         <img src="../img/contact.svg" alt="&lt;Contact&gt;">
     </div>
@@ -323,17 +327,18 @@
 
 <footer class="footer">
     <div class="links links_white">
-        <a href=""><svg width=40px height=40px><use xlink:href="img/symbols.svg#email"></use></svg></a>
-        <a href=""><svg width=40px height=40px><use xlink:href="img/symbols.svg#github"></use></svg></a>
-        <a href=""><svg width=40px height=40px><use xlink:href="img/symbols.svg#vk"></use></svg></a>
-        <a href=""><svg width=40px height=40px><use xlink:href="img/symbols.svg#telegram"></use></svg></a>
-        <a href=""><svg width=40px height=40px><use xlink:href="img/symbols.svg#whatsapp"></use></svg></a>
-        <a href=""><svg width=40px height=40px><use xlink:href="img/symbols.svg#instagram"></use></svg></a>
+        <a href="mailto:no.ms@ya.ru"><svg width=45px height=45px><use xlink:href="img/symbols.svg#email"></use></svg></a>
+        <a href="https://github.com/NovMS"><svg width=45px height=45px><use xlink:href="img/symbols.svg#github"></use></svg></a>
+        <a href="https://vk.com/maksim_novoseltsev"><svg width=45px height=45px><use xlink:href="img/symbols.svg#vk"></use></svg></a>
+        <a href="https://t.me/novms"><svg width=45px height=45px><use xlink:href="img/symbols.svg#telegram"></use></svg></a>
+        <a href="https://api.whatsapp.com/send?phone=79017477053"><svg width=45px height=45px><use xlink:href="img/symbols.svg#whatsapp"></use></svg></a>
+        <a href="https://www.instagram.com/_arlion_"><svg width=45px height=45px><use xlink:href="img/symbols.svg#instagram"></use></svg></a>
     </div>
     <div class="footer__about">
         <p>Design and development by Novoseltsev Maksim, 2018</p>
     </div>
 </footer>
 </body>
+<script src="js/libs/jquery.min.js"></script>
 <script src="js/build.js"></script>
 </html>

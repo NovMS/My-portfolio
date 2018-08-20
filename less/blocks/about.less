@@ -7,6 +7,10 @@
   position: relative;
   width: 100%;
   background: @color-main-back;
+
+  @media @tablet-width {
+    flex-direction: column;
+  }
 }
 
 .about__left {
@@ -15,15 +19,34 @@
   box-sizing: border-box;
   width: 50%;
   height: 100vh;
+  @media @tablet-width{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
 }
 
 .about__title {
   display: block;
   width: 60%;
   margin: 45vh auto 0 auto;
+  box-sizing: border-box;
+
+  @media @tablet-width {
+    margin: 0;
+    padding: 20px;
+    width: 40%;
+  }
+
+  @media @phone-width {
+    display: none;
+  }
 }
 
 .about__avatar {
+  box-sizing: border-box;
   position: absolute;
   width: 220px;
   top: 10vh;
@@ -32,6 +55,9 @@
   img{
     width: 100%;
   }
+  @media @tablet-width {
+    display: none;
+  }
 }
 
 .about__right {
@@ -39,10 +65,13 @@
   padding: 10vh 30px 30px 130px;
   box-sizing: border-box;
   width: 50%;
+  @media @tablet-width {
+    width: 100%;
+    padding: 20px;
+  }
 }
 
 .about__right-text {
-  //color: @color-dark-font;
   padding-bottom: 20px;
   margin-bottom: 30px;
   border-bottom: 4px solid @color-main-font;

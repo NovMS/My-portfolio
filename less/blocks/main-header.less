@@ -5,12 +5,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: inherit;
   position: relative;
   background: @color-main-back url("../img/back1.png") 0 100% fixed;
   animation: back1 50s linear infinite;
   width: 100%;
   height: 100vh;
+  box-sizing: border-box;
+
+  @media @tablet-width {
+    height: auto;
+    padding: 30px;
+  }
+
+  @media @phone-width {
+  }
 }
 @keyframes back1 {
   from {
@@ -23,6 +32,14 @@
 
 .main-header__logo {
   width: 70%;
+
+  @media @tablet-width {
+    width: 95%;
+  }
+
+  @media @phone-width {
+    width: 100%;
+  }
 }
 
 #nov {
@@ -30,6 +47,16 @@
 }
 
 .main-header__down-arrow {
-  position: absolute;
+  cursor: pointer;
+  position: fixed;
   bottom: 30px;
+  left: 50%;
+  margin-left: -30px;
+  transform: rotate(0deg);
+  z-index: 50000;
+  transition: 0.5s;
+
+  @media @tablet-width {
+    display: none;
+  }
 }
